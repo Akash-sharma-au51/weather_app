@@ -2,7 +2,7 @@ import React from "react";
 import apiKeys from "../apiKeys";
 import Clock from "react-live-clock";
 import Forcast from "./forcast";
-import loader from "./images/WeatherIcons.gif";
+import loader from "../images/WeatherIcons.gif";
 import ReactAnimatedWeather from "react-animated-weather";
 const dateBuilder = (d) => {
   let months = [
@@ -87,7 +87,6 @@ class Weather extends React.Component {
   }
 
   
-
   getPosition = (options) => {
     return new Promise(function (resolve, reject) {
       navigator.geolocation.getCurrentPosition(resolve, reject, options);

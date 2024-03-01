@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CurrentLocation from "./components/currentLocation";
+import CurrentLocation from "./component/currentLocation";
 import "./App.css";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <div className="container">
         <CurrentLocation />
       </div>
+      
     </React.Fragment>
   );
 }
